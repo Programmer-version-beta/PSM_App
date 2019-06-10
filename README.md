@@ -6,6 +6,7 @@ To create this app i used:
 - NavigationDrawerLayout and Fragments.
 
 Here some screenshots:
+
 ![Screenshot_20190611-004538_PSW_App](https://user-images.githubusercontent.com/37437347/59232864-70a34d00-8be6-11e9-9bcc-a39d1cc9d00e.jpg)
 ![Screenshot_20190611-004548_PSW_App](https://user-images.githubusercontent.com/37437347/59232835-4e113400-8be6-11e9-997f-c47e9ade6deb.jpg)
 ![Screenshot_20190611-004601_PSW_App](https://user-images.githubusercontent.com/37437347/59232845-57020580-8be6-11e9-8f2a-ee23054dbeab.jpg)
