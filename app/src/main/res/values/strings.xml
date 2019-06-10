@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">PSW_App</string>
+    <string name="action_settings">Settings</string>
+    <string name="recipe">1. Make the base: Put the flour into a large bowl, then stir in the yeast and salt. Make a well, pour in 200ml warm water and the olive oil and bring together with a wooden spoon until you have a soft, fairly wet dough. Turn onto a lightly floured surface and knead for 5 mins until smooth. Cover with a tea towel and set aside. You can leave the dough to rise if you like, but it’s not essential for a thin crust. \n\n2.Make the sauce: Mix the passata, basil and crushed garlic together, then season to taste. Leave to stand at room temperature while you get on with shaping the base. \n\n3.Roll out the dough: If you’ve let the dough rise, give it a quick knead, then split into two balls. On a floured surface, roll out the dough into large rounds, about 25cm across, using a rolling pin. The dough needs to be very thin as it will rise in the oven. Lift the rounds onto two floured baking sheets. \n\n 4.Top and bake: Heat oven to 240C/fan 220C /gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">ActivityMain</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="let_s_eat_something">Let\'s eat something</string>
+    <string name="time_to_eat_something">Time to eat \n something!</string>
+    <string name="add_a_recipe">Add a recipe</string>
+    <string name="my_profile">My profile</string>
+    <string name="add">Add</string>
+    <string name="that_s_all">That\'s all</string>
+    <string name="what_do_you_have_in_fridge">What do you have in fridge?</string>
+    <string name="name">Name:</string>
+    <string name="type">Type:</string>
+    <string name="description">Description:</string>
+    <string name="component"> Component:</string>
+    <string name="amount">Amount:</string>
+    <string name="unit">Unit:</string>
+    <string name="add_steps_needed_to_prepare_your_dish">Add steps needed to prepare your dish</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="minimum_password">Password is to short.</string>
+    <string name="auth_failed">Authentication failed.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sing_in">Sign in</string>
+    <string name="please_wait_a_moment_n_we_are_preparing_recipes_for_you">Please wait a moment.  We are preparing recipes for you.</string>
+    <string name="recipes_for_you">Recipes for you:</string>
+    <string name="list_of_steps">List of steps:</string>
+    <string name="list_of_components">List of components</string>
+    <string name="next_step">Next step</string>
+</resources>
