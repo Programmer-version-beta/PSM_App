@@ -30,7 +30,7 @@ public class FragmentAddRecipeSecondStep extends Fragment {
     Recipe recipe;
 
     enum Units{
-        spoon, litr, kg, g
+        kg, g, l, ml
     }
 
     public FragmentAddRecipeSecondStep() {
@@ -103,7 +103,7 @@ public class FragmentAddRecipeSecondStep extends Fragment {
         etAmount = view.findViewById(R.id.add_recipe_second_step_edittext_unit);
         atvComponent = view.findViewById(R.id.add_recipe_second_step_auto_component);
         spUnit = view.findViewById(R.id.add_recipe_second_step_spinner_unit);
-        spUnit.setAdapter(new ArrayAdapter<>(view.getContext(), R.layout.support_simple_spinner_dropdown_item, Units.values()));
+        spUnit.setAdapter(new ArrayAdapter<>(view.getContext(), R.layout.spinner_item, Units.values()));
     }
 
     void initRecyclerView(View view){
