@@ -2,9 +2,8 @@ package com.example.psw_app;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,19 +11,14 @@ import android.widget.TextView;
 
 
 public class FragmentShowRecipe extends Fragment {
-    TextView tvName;
-    TextView tvType;
-    TextView tvDescription;
-    Recipe currentRecipe;
-    ViewPager viewPager;
+    private Recipe currentRecipe;
 
-    public FragmentShowRecipe() {
+    private FragmentShowRecipe(Recipe recipe) {
+        this.currentRecipe = recipe;
     }
 
-    public static FragmentShowRecipe newInstance(Recipe recipe) {
-        FragmentShowRecipe fragmentShowRecipe = new FragmentShowRecipe();
-        fragmentShowRecipe.currentRecipe = recipe;
-        return fragmentShowRecipe;
+    static FragmentShowRecipe newInstance(Recipe recipe) {
+        return new FragmentShowRecipe(recipe);
     }
 
     @Override
@@ -36,19 +30,17 @@ public class FragmentShowRecipe extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_show_recipe, container, false);
-        tvName = view.findViewById(R.id.show_recipe_name);
-        tvType = view.findViewById(R.id.show_recipe_kind);
-        tvDescription = view.findViewById(R.id.show_recipe_description);
-        viewPager = view.findViewById(R.id.show_recipe_view_pager);
+        TextView tvName = view.findViewById(R.id.show_recipe_tv_name);
+        TextView tvComponentsList = view.findViewById(R.id.show_recipe_tv_components_list);
+        TextView tvStepsList = view.findViewById(R.id.show_recipe_tv_steps_list);
         tvName.setText(currentRecipe.getName());
-        tvType.setText(currentRecipe.getType());
-        tvDescription.setText(currentRecipe.getDescription());
-        viewPager.setAdapter(new ViewPagerAdapter(getChildFragmentManager(), currentRecipe, currentRecipe.getComponents()));
+        tvStepsList.setText(currentRecipe.getDescription());
+        tvComponentsList.setText(currentRecipe.listToString());
         return view;
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
     }
 

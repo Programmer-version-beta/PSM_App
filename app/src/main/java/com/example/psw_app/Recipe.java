@@ -2,30 +2,24 @@ package com.example.psw_app;
 
 import java.util.ArrayList;
 
-class Recipe {
-    private String name;
-    private String description;
-    private String type;
-    private ArrayList<Component> components;
-    private ArrayList <String> steps;
-    private String owner;
-    int have = 0;
-    int dontHave = 0;
+public class Recipe {
+    public String name;
+    public String description;
+    public ArrayList<Component> components;
+    public String owner;
+    public int have = 0;
+    public int dontHave = 0;
 
     Recipe() {
         name = "";
         description = "";
-        type = "";
         components = new ArrayList<>();
-        steps = new ArrayList<>();
     }
 
-    Recipe(String name, String description, String type, ArrayList<Component> components, ArrayList<String> steps) {
+    Recipe(String name, String description, ArrayList<Component> components) {
         this.name = name;
         this.description = description;
-        this.type = type;
         this.components = components;
-        this.steps = steps;
     }
 
     String getName() {
@@ -36,49 +30,18 @@ class Recipe {
         return description;
     }
 
-    String getType() {
-        return type;
-    }
-
-    ArrayList<Component> getComponents() {
-        return components;
-    }
-
-    ArrayList<String> getSteps() {
-        return steps;
-    }
-
     void setName(String name) {
         this.name = name;
-    }
-
-    void setType(String type) {
-        this.type = type;
-    }
-
-    void setDescription(String description) {
-        this.description = description;
-    }
-
-    void clearListAndMap() {
-        components = new ArrayList<>();
-        steps = new ArrayList<>();
-    }
-
-    void appendNewStep(String step) {
-        steps.add(step);
-    }
-
-    void appendNewComponent(String name, String unit, double amount) {
-        components.add(new Component(name, unit, amount));
-    }
-
-    String getOwner() {
-        return owner;
     }
 
     void setOwner(String owner) {
         this.owner = owner;
     }
 
+    String listToString() {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < components.size(); i++)
+            result.append(components.get(i).getName()).append(": ").append(components.get(i).getAmount()).append("\n");
+        return result.toString();
+    }
 }

@@ -1,31 +1,28 @@
 package com.example.psw_app;
 
-class Component {
+public class Component {
     private String name;
-    private String unit;
-    private double amount;
+    private String amount;
+    private String owner;
 
-    Component(String name, String unit, double amount){
+    public Component(String name, String amount, String owner){
         this.name = name;
-        this.unit = unit;
         this.amount = amount;
+        this.owner = owner;
     }
 
     Component(){
-        name = "";
-        unit = "";
-        amount = 0;
     }
 
-    String getUnit() {
-        return unit;
-    }
-
-    double getAmount() {
+    public String getAmount() {
         return amount;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getOwner() {
+        return owner;
     }
 }
